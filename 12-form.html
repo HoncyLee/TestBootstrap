@@ -68,11 +68,49 @@
         <input type="range" class="custom-range" min="1", max="10", step="1">
       </div>
       <button class="btn btn-primary btn-block" type="submit">Submit</button>
-
-
     </form>
-
-
+    <!-- Inline form -->
+    <form  class="form-inline">
+      <input type="text" class="form-control mr-2" id="username" placeholder="enter username">
+      <input type="password" class="form-control mr-2" id="password" placeholder="enter password">
+      <div class="form-check">
+        <label class="form-check-label mr-2">
+          <input type="checkbox" class="form-check-input">Remember Me
+        </label>
+      </div>
+      <button class="btn btn-light" type="submit">Submit</button>
+    </form>
+    <hr>
+    <!-- form row -->
+    <form>
+      <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First Name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last Name">
+      </div>
+      </div>
+    </form>
+    <!-- validation -->
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control is-valid" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" class="form-control is-valid" id="password">
+      <div class="invalid-feedback">
+        Password Not Strong Enough
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password2">Confirm Password</label>
+      <input type="text" class="form-control is-invalid" id="password2">
+      <div class="invalid-feedback">
+        password does not match
+      </div>
+    </div>
 
 
 </div>
